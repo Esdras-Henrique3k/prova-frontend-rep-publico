@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "HelveticaUL";
+    src: url("./assets/Fonts/HelveticaUltraLt_0.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Helvetica Condensed Regular";
+    src: url("./assets/Fonts/ps.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("./assets/Fonts/Roboto-Regular_0.ttf")format('opentype');
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("./assets/Fonts/Roboto-Light_0.ttf")format('opentype');
+}
+
+$linhaDasTabelas: #29abe2;
+$numerosTabelas: #012d51;
+$Informaçõesdatabela: #808080;
+
+
+.nav {
+    li {
+        display: flex;
+        direction: row;
+        align-items: center;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #cad {
+        text-decoration: underline;
+    }
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.FormCadastro {
+    .txclr {
+        color: 'white'
+    }
+}
+
+.titleCadastro {
+    font-family: 'HelveticaUL';
+    font-size: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 10%;
+    width: 50%;
+    height: 200px;
+
+
+    td {
+        border: 1px solid;
+        border-right: none;
+        border-bottom: none;
+        border-color: $linhaDasTabelas;
+        margin-top: 100px;
+        text-align: center;
+        font-family: 'Helvetica Condensed Regular';
+        color: $Informaçõesdatabela;
+        font-size: 15px;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+
+    th {
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-color: $linhaDasTabelas;
+        margin: 100px;
+        border-spacing: 10%;
+
+        &:first-child {
+            border-left: none;
+        }
+    }
+
+    .title {
+        color: $numerosTabelas;
+        font-family: 'Roboto Regular';
+    }
+
+    .id {
+        color: $numerosTabelas;
+        font-family: 'Roboto Light';
+    }
+}
+
+.titleTb {
+    color: $numerosTabelas;
+    font-family: 'Roboto Regular';
+}
+
+.infoTb {
+    font-family: 'Helvetica Condensed Regular';
+    color: $Informaçõesdatabela;
+}
